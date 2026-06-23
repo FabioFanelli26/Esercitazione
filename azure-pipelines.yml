@@ -52,5 +52,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'build'
-    ArtifactName: 'website-$(Build.SourceBranchName)'
+    ArtifactName: '$(Build.SourceBranchName)'
   displayName: 'Pubblica Artifact'

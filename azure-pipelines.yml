@@ -47,3 +47,10 @@ steps:
 
   # Nome dello step
   displayName: 'Pubblica Artifact'
+
+# Esplicita chi ha chiamato l'artifatto
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'build'
+    ArtifactName: 'website-$(Build.SourceBranchName)'
+  displayName: 'Pubblica Artifact'
